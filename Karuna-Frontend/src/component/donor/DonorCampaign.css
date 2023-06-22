@@ -1,0 +1,13 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
+    gap: 20px; /* Add some spacing between the cards */
+  }
+  
+  .card {
+    width: 18rem;
+    margin-bottom: 20px; /* Add some spacing between the cards vertically */
+  }
+  
