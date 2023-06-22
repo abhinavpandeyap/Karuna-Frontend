@@ -16,7 +16,7 @@ const Navbar1 = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 <div className="karuna__navbar-links_component">
-                    <p><Link to={"/home"}>Home</Link></p>
+                    <p><Link to={"/"}>Home</Link></p>
                     <p><Link to={"/about"}>About Us</Link></p>
                     <p><Link to={"/contact"}>Contact Us</Link></p>
                     <p><Link to={"/donorpagecontent"}>Dashboard</Link></p>
@@ -25,7 +25,7 @@ const Navbar1 = () => {
                 </div>
             </div>
                 <div className="karuna__navbar-sign">
-                    <p><Link to={"/home"}>Logout</Link></p>
+                    <p><Link to={"/"}>Logout</Link></p>
 
                 </div>
 

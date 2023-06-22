@@ -16,7 +16,7 @@ import {
 import logo from '../../assets/logo.png';
 import AdminService from '../../services/AdminService';
 
-const AdminLogin=()=>{
+const StaffLogin=()=>{
 const navigator = useNavigate();
 const [data,setData]=useState({
   email:'',
@@ -56,7 +56,7 @@ const submitForm=(event)=>{
       <img src={logo} style={{width: '100px'}} alt="logo" />
            
         <h4 className="mt-1 mb-5 pb-1">We are The Karuna Team</h4>
-        <h5>Admin Login</h5>
+        <h5>Staff Login</h5>
       </div>
 
 
@@ -127,4 +127,4 @@ const submitForm=(event)=>{
 </MDBContainer>
     </div>
 )}
-export default AdminLogin;
+export default StaffLogin;

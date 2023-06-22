@@ -8,59 +8,23 @@ const AdminService = {
   },
 
   logout: (staffId) => {
-    return axios.get(`${baseUrl}/${staffId}`);
-  },
-
-  viewStaffs: () => {
-    return axios.get(`${baseUrl}/staffs`);
-  },
-
-  viewRequests: () => {
-    return axios.get(`${baseUrl}/requests`);
-  },
-
-  addCampaign: (campaign) => {
-    return axios.post(`${baseUrl}/campaign`, campaign);
-  },
-
-  updateCampaign: (campaign) => {
-    return axios.put(`${baseUrl}/campaign`, campaign);
-  },
-
-  deleteCampaign: (campaignId) => {
-    return axios.delete(`${baseUrl}/${campaignId}`);
-  },
-
-  removeDonor: (donorId) => {
-    return axios.delete(`${baseUrl}/${donorId}`);
-  },
-
-  removeReceiver: (receiverId) => {
-    return axios.delete(`${baseUrl}/${receiverId}`);
+    return axios.post(`${baseUrl}/logout/${staffId}`);
   },
 
   addStaff: (staff) => {
-    return axios.post(`${baseUrl}/staff`, staff);
+    return axios.post(`${baseUrl}/addStaff`, staff);
   },
 
   updateStaff: (staff) => {
-    return axios.put(`${baseUrl}/staff`, staff);
+    return axios.put(`${baseUrl}/updateStaff`, staff);
   },
 
   deleteStaff: (staffId) => {
-    return axios.delete(`${baseUrl}/${staffId}`);
+    return axios.delete(`${baseUrl}/deleteStaff/${staffId}`);
   },
 
-  viewDonorLocation: (donorId) => {
-    return axios.get(`${baseUrl}/donor_location/${donorId}`);
-  },
-
-  viewReceiverLocation: (receiverId) => {
-    return axios.get(`${baseUrl}/receiver_location/${receiverId}`);
-  },
-
-  checkPaymentStatus: (paymentId) => {
-    return axios.get(`${baseUrl}/payment_status/${paymentId}`);
+  viewStaffs: () => {
+    return axios.get(`${baseUrl}/viewStaffs`);
   },
 };
 

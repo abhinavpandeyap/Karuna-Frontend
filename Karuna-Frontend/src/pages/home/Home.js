@@ -18,8 +18,8 @@ const Home=()=>{
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>“There is nothing more beautiful than someone who goes out of their way to make life beautiful for others.” </h3>
+        <h5>- Mandy Hale</h5>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -30,8 +30,8 @@ const Home=()=>{
       />
 
       <Carousel.Caption>
-        <h3>Donation</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>"The value of life is not in its duration, but in its donation. You are not important because of how long you live, you are important because of how effective you live"</h3>
+        <h5>- Myles Munroe</h5>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -42,10 +42,9 @@ const Home=()=>{
       />
 
       <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
+        <h3>"No one has ever become poor by giving"</h3>
+        <h5>
+        - Anne Frank </h5>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -56,10 +55,10 @@ const Home=()=>{
       />
 
       <Carousel.Caption>
-        <h3>Fourth slide label</h3>
-        <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        </p>
+        <h3>"We make a living by what we get. We make a life by what we give"</h3>
+        <h5>
+        - Winston S. Churchill
+        </h5>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>

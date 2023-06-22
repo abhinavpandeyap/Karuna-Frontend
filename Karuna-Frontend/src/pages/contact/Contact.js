@@ -1,6 +1,13 @@
 import './Contact.css';
+import { toast } from 'react-toastify'
 const Contact=()=>{
-    return <div>
+
+  const submitForm =(event)=>{
+      // event.preventDefault()
+      toast.success("Thank You for Contacting Us !! We'll reply you soon..")
+  }
+    return (
+    <div>
         <div className="contact-us-container">
       <h1>Contact Us</h1>
       <form>
@@ -13,9 +20,10 @@ const Contact=()=>{
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="reset" onClick={submitForm}>Submit</button>
       </form>
     </div>
     </div>
+    )
 }
 export default Contact;

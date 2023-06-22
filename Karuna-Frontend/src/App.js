@@ -11,7 +11,7 @@ import Contact from './pages/contact/Contact';
 
 import DonorLogin from './pages/login/DonorLogin';
 import ReceiverLogin from './pages/login/ReceiverLogin';
-import AdminLogin from './pages/login/AdminLogin';
+import StaffLogin from './pages/login/StaffLogin';
 
 import SignUpDonor from './pages/signUp/SignUpDonor';
 import SignUpReceiver from './pages/signUp/SignUpReceiver';
@@ -73,11 +73,11 @@ function App() {
           <Routes>
             <Route path="/donorlogin" element={<DonorLogin />} />
             <Route path="/receiverlogin" element={<ReceiverLogin />} />
-            <Route path="/adminlogin" element={<AdminLogin />} />
+            <Route path="/stafflogin" element={<StaffLogin />} />
             <Route path="/signupdonor" element={<SignUpDonor />} />
             <Route path="/signupreceiver" element={<SignUpReceiver />} />
 
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
 

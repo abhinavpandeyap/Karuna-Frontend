@@ -27,7 +27,7 @@ const Navbar = () => {
     const logout = () => {
         localStorage.removeItem("user");
         sessionStorage.removeItem("user");
-        navigator("/home")
+        navigator("/")
         window.location.reload();
 
     }
@@ -43,7 +43,7 @@ const Navbar = () => {
                     <img id="logo" src={logo} alt="logo" />
                 </div>
                 <div className="karuna__navbar-links_component">
-                    <p><Link to={"/home"}>Home</Link></p>
+                    <p><Link to={"/"}>Home</Link></p>
                     <p><Link to={"/about"}>About Us</Link></p>
                     <p><Link to={"/contact"}>Contact Us</Link></p>
                 </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
                                     <NavDropdown.Item as={Link} to="/receiverlogin">
                                         <div className="dropdown">Receiver</div>
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="/adminlogin">
+                                    <NavDropdown.Item as={Link} to="/stafflogin">
                                         <div className="dropdown">Staff</div>
                                     </NavDropdown.Item>
                                 </NavDropdown>
